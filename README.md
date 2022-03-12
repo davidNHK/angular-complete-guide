@@ -1,3 +1,5 @@
+Implement [Angular complete guide](https://www.udemy.com/course/the-complete-guide-to-angular-2/) course
+
 # AngualrCompleteGuide
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
