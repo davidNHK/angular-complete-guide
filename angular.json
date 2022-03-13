@@ -3,10 +3,10 @@
   "cli": {
     "defaultCollection": "@angular-eslint/schematics"
   },
-  "defaultProject": "angualr-complete-guide",
+  "defaultProject": "angular-complete-guide",
   "newProjectRoot": "projects",
   "projects": {
-    "angualr-complete-guide": {
+    "angular-complete-guide": {
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -49,7 +49,7 @@
             ],
             "index": "src/index.html",
             "main": "src/main.ts",
-            "outputPath": "dist/angualr-complete-guide",
+            "outputPath": "dist/angular-complete-guide",
             "polyfills": "src/polyfills.ts",
             "scripts": [],
             "styles": [
@@ -62,7 +62,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angualr-complete-guide:build"
+            "browserTarget": "angular-complete-guide:build"
           }
         },
         "lint": {
@@ -78,10 +78,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "angualr-complete-guide:build:development"
+              "browserTarget": "angular-complete-guide:build:development"
             },
             "production": {
-              "browserTarget": "angualr-complete-guide:build:production"
+              "browserTarget": "angular-complete-guide:build:production"
             }
           },
           "defaultConfiguration": "development"

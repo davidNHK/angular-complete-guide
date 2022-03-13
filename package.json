@@ -40,7 +40,7 @@
     "yarn": "Use npm"
   },
   "license": "MIT",
-  "name": "angualr-complete-guide",
+  "name": "angular-complete-guide",
   "private": true,
   "scripts": {
     "build": "ng build",

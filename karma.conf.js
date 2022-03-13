@@ -17,7 +17,7 @@ module.exports = function (config) {
     },
     colors: true,
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/angualr-complete-guide'),
+      dir: require('path').join(__dirname, './coverage/angular-complete-guide'),
       reporters: [{ type: 'html' }, { type: 'text-summary' }],
       subdir: '.',
     },
