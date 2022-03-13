@@ -2,7 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  styleUrls: ['./app.component.css'],
+  styles: [
+    `
+      h3 {
+        color: dodgerblue;
+      }
+    `,
+  ],
   templateUrl: './app.component.html',
 })
 export class AppComponent {
