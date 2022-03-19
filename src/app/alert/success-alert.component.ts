@@ -4,13 +4,13 @@ import { Component } from '@angular/core';
   selector: 'app-alert[level="success"]',
   styles: [
     `
-      h1 {
-        color: greenyellow;
+      p {
+        padding: 20px;
+        background-color: palegreen;
+        border: 1px solid green;
       }
     `,
   ],
   templateUrl: './alert.component.html',
 })
-export class SuccessAlertComponent {
-  level = 'Success';
-}
+export class SuccessAlertComponent {}
