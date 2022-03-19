@@ -1,13 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function hasEventTarget<T extends HTMLElement>(
+  event: Event,
+): event is Event & { target: T } {
+  return event.target !== null;
+}
 
 @Component({
   selector: 'app-servers',
   styleUrls: ['./servers.component.css'],
-  template: ` <app-server></app-server>
-    <app-server></app-server>`,
+  templateUrl: './servers.component.html',
 })
-export class ServersComponent implements OnInit {
-  constructor() {}
+export class ServersComponent {
+  allowNewServer = false;
 
-  ngOnInit(): void {}
+  serverCreationStatus = 'No Server created';
+
+  serverName = 'Testserver';
+
+  constructor() {
+    setTimeout(() => (this.allowNewServer = true), 2000);
+  }
+
+  onCreatedServer() {
+    this.serverCreationStatus = `Server was created! Name is ${this.serverName}`;
+  }
 }
