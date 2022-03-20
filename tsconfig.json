@@ -9,6 +9,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "noEmit": false,
     "outDir": "./dist/out-tsc",
     "paths": {
       "@app/*": ["src/*"]
