@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-alert[level="success"]',
@@ -13,4 +13,6 @@ import { Component } from '@angular/core';
   ],
   templateUrl: './alert.component.html',
 })
-export class SuccessAlertComponent {}
+export class SuccessAlertComponent {
+  @Input() level!: 'success';
+}
